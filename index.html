@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillHub - Learn Practical Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page 1: Get Started -->
+    <div class="page-1" id="page1">
+        <div class="page-1-content">
+            <div class="hero-text">
+                <p class="eyebrow">Community Engagement Program</p>
+                <h1>SkillHub</h1>
+                <p class="tagline">Learn Practical Skills.</p>
+                <p class="subtitle">Empower Your Future.</p>
+                <p class="hero-description">Join a vibrant learning space crafted for college innovators. Explore career-ready skills, get curated resources, and collaborate with peers who want to build real things.</p>
+                <div class="hero-actions">
+                    <button class="get-started-btn" onclick="goToPage2()">Explore SkillHub</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: Main Content -->
+    <div class="page-2" id="page2">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo" onclick="scrollToTop()">SkillHub</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#join" class="nav-link">Join</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About SkillHub</h2>
+            <div class="about-content">
+                <p>SkillHub is a community-driven platform launched by our college under the Community Engagement Program. Our goal is to connect students with real-world learning experiences through hands-on, practical training. We believe that learning by doing is the best way to prepare for the future.</p>
+            </div>
+
+            <div class="mission-vision">
+                <div class="mission-box">
+                    <h3>Our Mission</h3>
+                    <p>To bridge the gap between theoretical knowledge and practical expertise, empowering every student with employable skills.</p>
+                </div>
+                <div class="vision-box">
+                    <h3>Our Vision</h3>
+                    <p>To build a self-sustaining community of learners, mentors, and innovators who create real change through skills and collaboration.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Section -->
+        <section class="why-choose">
+            <h2>Why Choose SkillHub?</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🎯 Practical Learning</h3>
+                    <p>Learn through projects, workshops, and interactive sessions that focus on practical outcomes.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🤝 Peer Community</h3>
+                    <p>Join learners and mentors from different domains, exchange ideas, and grow together.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💼 Industry-Ready Skills</h3>
+                    <p>Every course is designed to make you job-ready with the latest tools and technologies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <h2>Explore Skill Categories</h2>
+            <div class="skill-categories">
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>Build responsive websites and full-stack apps with HTML, CSS, JavaScript, and modern frameworks that power real-world experiences.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Graphic Design</h3>
+                    <p>Create striking visuals using Photoshop, Illustrator, and Figma. Master color theory, typography, and branding for digital and print media.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Digital Marketing</h3>
+                    <p>Plan data-driven SEO, social, and email campaigns that grow audiences, convert leads, and measure impact with analytics.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Public Speaking</h3>
+                    <p>Deliver confident talks with storytelling, vocal presence, and body language that engage crowds and communicate ideas clearly.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Communication Skills</h3>
+                    <p>Master active listening, persuasive messaging, and professional writing to collaborate better and present ideas with clarity.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Data Analysis</h3>
+                    <p>Transform raw datasets with Excel, SQL, and Python, visualize trends, and present insights that guide smarter decisions.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Project Management</h3>
+                    <p>Coordinate teams, manage risks, and ship on time using Agile, Scrum, and tools like Jira or Trello to keep delivery on track.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Cybersecurity</h3>
+                    <p>Protect systems with ethical hacking basics, threat modeling, and best practices that keep data secure and compliant.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Content Creation</h3>
+                    <p>Plan, script, and publish compelling blogs and videos optimized for multiple platforms and consistent brand storytelling.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section" id="courses">
+            <h2>Featured Courses & Tutorials</h2>
+            <div class="video-grid">
+                <div class="video-card" id="video1">
+                    <div class="video-wrapper" onclick="openVideo('https://www.youtube.com/watch?v=HcOc7P5BMi4')" style="cursor: pointer;">
+                        <iframe src="https://www.youtube.com/embed/HcOc7P5BMi4" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>HTML CSS & JavaScript</h3>
+                        <p>Complete web development tutorial for beginners</p>
+                        <button class="expand-btn" onclick="toggleExpand('video1')">Expand</button>
+                    </div>
+                </div>
+                <div class="video-card" id="video2">
+                    <div class="video-wrapper" onclick="openVideo('https://www.youtube.com/watch?v=yfoY53QXEnI')" style="cursor: pointer;">
+                        <iframe src="https://www.youtube.com/embed/yfoY53QXEnI" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Git & GitHub Tutorial</h3>
+                        <p>Learn version control and collaboration</p>
+                        <button class="expand-btn" onclick="toggleExpand('video2')">Expand</button>
+                    </div>
+                </div>
+                <div class="video-card" id="video3">
+                    <div class="video-wrapper" onclick="openVideo('https://www.youtube.com/watch?v=8JJ101D3knE')" style="cursor: pointer;">
+                        <iframe src="https://www.youtube.com/embed/8JJ101D3knE" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>UI/UX Design Basics</h3>
+                        <p>Master the fundamentals of design thinking</p>
+                        <button class="expand-btn" onclick="toggleExpand('video3')">Expand</button>
+                    </div>
+                </div>
+                <div class="video-card" id="video4">
+                    <div class="video-wrapper" onclick="openVideo('https://www.youtube.com/watch?v=rfscVS0vtbw')" style="cursor: pointer;">
+                        <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Python Programming</h3>
+                        <p>Learn Python from scratch to advanced level</p>
+                        <button class="expand-btn" onclick="toggleExpand('video4')">Expand</button>
+                    </div>
+                </div>
+                <div class="video-card" id="video5">
+                    <div class="video-wrapper" onclick="openVideo('https://www.youtube.com/watch?v=UB1O30fR-EE')" style="cursor: pointer;">
+                        <iframe src="https://www.youtube.com/embed/UB1O30fR-EE" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Digital Marketing Course</h3>
+                        <p>Complete guide to digital marketing strategies</p>
+                        <button class="expand-btn" onclick="toggleExpand('video5')">Expand</button>
+                    </div>
+                </div>
+                <div class="video-card" id="video6">
+                    <div class="video-wrapper" onclick="openVideo('https://www.youtube.com/watch?v=1Rs2ND1ryYc')" style="cursor: pointer;">
+                        <iframe src="https://www.youtube.com/embed/1Rs2ND1ryYc" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Data Science with Python</h3>
+                        <p>Data analysis and visualization techniques</p>
+                        <button class="expand-btn" onclick="toggleExpand('video6')">Expand</button>
+                    </div>
+                </div>
+                <div class="video-card" id="video7">
+                    <div class="video-wrapper" onclick="openVideo('https://www.youtube.com/watch?v=inWWhr5tnEA')" style="cursor: pointer;">
+                        <iframe src="https://www.youtube.com/embed/inWWhr5tnEA" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Cybersecurity Basics</h3>
+                        <p>Fundamentals of ethical hacking and network defense</p>
+                        <button class="expand-btn" onclick="toggleExpand('video7')">Expand</button>
+                    </div>
+                </div>
+                <div class="video-card" id="video8">
+                    <div class="video-wrapper" onclick="openVideo('https://www.youtube.com/watch?v=xt8EZTGQ8h4')" style="cursor: pointer;">
+                        <iframe src="https://www.youtube.com/embed/xt8EZTGQ8h4" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Content Creation Strategy</h3>
+                        <p>Plan and produce engaging content across platforms</p>
+                        <button class="expand-btn" onclick="toggleExpand('video8')">Expand</button>
+                    </div>
+                </div>
+                <div class="video-card" id="video9">
+                    <div class="video-wrapper" onclick="openVideo('https://www.youtube.com/watch?v=Qk4N5kkifGQ')" style="cursor: pointer;">
+                        <iframe src="https://www.youtube.com/embed/Qk4N5kkifGQ" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Communication Skills Mastery</h3>
+                        <p>Improve listening, clarity, and confidence in every conversation</p>
+                        <button class="expand-btn" onclick="toggleExpand('video9')">Expand</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <h2>What Students Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"SkillHub helped me turn my interest in design into a real portfolio. The workshops were so practical!"</p>
+                    <h4>- Aditi Verma</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Through SkillHub, I learned public speaking and overcame stage fear. It truly changed my confidence!"</p>
+                    <h4>- Priya Sharma</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Amazing platform! The mentors are approachable and the YouTube resources are perfectly curated."</p>
+                    <h4>- Rohan Patel</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Section -->
+        <section class="feedback" id="join">
+            <h2>Share Your Review</h2>
+            <form class="feedback-form" action="https://formsubmit.co/rudranshmjaiswal15@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New review from SkillHub">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="feedback">Suggestion / Feedback</label>
+                    <textarea id="feedback" name="feedback" placeholder="Share your thoughts with us..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="contact-cta">
+            <div class="contact-card">
+                <h3>Need More Details or Have an Inquiry?</h3>
+                <p>We're happy to help you choose the right learning path or answer questions about SkillHub programs.</p>
+                <div class="contact-actions">
+                    <button class="contact-btn call" onclick="openContact('call')">Call for Details</button>
+                    <button class="contact-btn whatsapp" onclick="openContact('whatsapp')">Chat on WhatsApp</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 SkillHub. All Rights Reserved. Empowering Students Through Practical Learning.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
